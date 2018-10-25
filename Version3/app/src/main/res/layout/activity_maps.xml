@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+
+    <FrameLayout
+        android:id="@+id/map_info"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/activity_maps_btn_details"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/charge_details"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/activity_maps_imageView_niveau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            app:srcCompat="@drawable/orang_marker"
+            android:layout_gravity="left|center" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/activity_maps_floatingActionBtn_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="top|right"
+            android:visibility="gone"
+            app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/activity_maps_textView_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bdeb tricity"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="top|center_horizontal"/>
+            <TextView
+                android:id="@+id/activity_maps_textView_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Tel: 514-866-9696"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorneActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:id="@+id/activity_borne_editText_nom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="20dp"
+            android:autofillHints="Nom"
+            android:hint="@string/charge_nom"
+            android:inputType="text"
+            tools:targetApi="o" />
+        <EditText
+
+            android:id="@+id/activity_borne_editText_numero"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Numero"
+            android:hint="@string/charge_numero"
+            android:inputType="text"
+            tools:targetApi="o" />
+        <EditText
+            android:id="@+id/activity_borne_editText_rue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Rue"
+            android:hint="@string/charge_rue"
+            android:inputType="text"
+            tools:targetApi="o" />
+        <EditText
+            android:id="@+id/activity_borne_editText_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Code Postal"
+            android:hint="@string/charge_codepostal"
+            android:inputType="text"
+            tools:targetApi="o" />
+        <EditText
+            android:id="@+id/activity_borne_editText_tel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Telephone"
+            android:hint="@string/charge_telt"
+            android:inputType="number"
+            tools:targetApi="o" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/activity_borne_spinner_nb"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                />
+            <Spinner
+                android:id="@+id/activity_borne_spinner_level"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center">
+
+    <Button
+        android:id="@+id/activity_borne_btnAjout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/charge_ajout"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="65dp" />
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

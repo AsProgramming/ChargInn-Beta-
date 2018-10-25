@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ChargInn</string>
+    <string name="title_activity_maps">ChargInn</string>
+    <string name="signin_icon">Signin</string>
+
+    <string name="signin_email">Email</string>
+    <string name="signin_conn">Connexion</string>
+    <string name="signin_signup">Inscription</string>
+
+    <string name="signin_pass">Password</string>
+    <string name="charge_nom">Nom</string>
+    <string name="charge_numero">Numero Civic</string>
+    <string name="charge_rue">Rue</string>
+    <string name="charge_codepostal">Code Postal</string>
+    <string name="charge_ajout">Ajouter</string>
+    <string name="charge_telt">Telephone</string>
+
+    <string name="charge_nb">Nombre de Bornes</string>
+
+    <string name="charge_niveai">Niveau</string>
+    <string name="charge_details">Details</string>
+    <string name="lister">Afficher Bornes par:</string>
+    <string name="alphabet">Ordre</string>
+    <string name="fav">Favoris</string>
+    <string-array name="nombres">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6+</item>
+    </string-array>
+    <string-array name="niveau">
+        <item>Niveau 1</item>
+        <item>Niveau 2</item>
+        <item>Niveau 3</item>
+    </string-array>
+</resources>
